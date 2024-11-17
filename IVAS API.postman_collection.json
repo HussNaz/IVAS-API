@@ -1,0 +1,429 @@
+{
+	"info": {
+		"_postman_id": "7fdf996b-c90f-42b0-9dc3-9eb374210f33",
+		"name": "IVAS API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24827832",
+		"_collection_link": "https://nazmul16.postman.co/workspace/New-Team-Workspace~f35f1b95-7ada-49e0-aab5-32ac6c8cef37/collection/24827832-7fdf996b-c90f-42b0-9dc3-9eb374210f33?action=share&source=collection_link&creator=24827832"
+	},
+	"item": [
+		{
+			"name": "create bin",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nid\": \"1234567890\",\r\n    \"phoneNumber\": \"+88012345678\",\r\n    \"areaOfService\": \"Dhaka\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/createBin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"createBin"
+					],
+					"query": [
+						{
+							"key": "binNumber",
+							"value": "123456789012i",
+							"disabled": true
+						},
+						{
+							"key": "nid",
+							"value": "7888",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create bin Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nid\": \"1234567890\",\r\n    \"phoneNumber\": \"+88012345678\",\r\n    \"areaOfService\": \"Dhaka\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/createBin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"createBin"
+					],
+					"query": [
+						{
+							"key": "binNumber",
+							"value": "123456789012i",
+							"disabled": true
+						},
+						{
+							"key": "nid",
+							"value": "7888",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create bin Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nid\": \"1234567890\",\r\n    \"phoneNumber\": \"+88012345678\",\r\n    \"areaOfService\": \"Dhaka\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/createBin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"createBin"
+					],
+					"query": [
+						{
+							"key": "binNumber",
+							"value": "123456789012i",
+							"disabled": true
+						},
+						{
+							"key": "nid",
+							"value": "7888",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create bin Copy 2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nid\": \"1234567890\",\r\n    \"phoneNumber\": \"+88012345678\",\r\n    \"areaOfService\": \"Dhaka\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/createBin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"createBin"
+					],
+					"query": [
+						{
+							"key": "binNumber",
+							"value": "123456789012i",
+							"disabled": true
+						},
+						{
+							"key": "nid",
+							"value": "7888",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create bin Copy 3",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nid\": \"1234567890\",\r\n    \"phoneNumber\": \"+88012345678\",\r\n    \"areaOfService\": \"Dhaka\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/createBin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"createBin"
+					],
+					"query": [
+						{
+							"key": "binNumber",
+							"value": "123456789012i",
+							"disabled": true
+						},
+						{
+							"key": "nid",
+							"value": "7888",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeactivateBiN",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/deactivateBin?bin=124",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"deactivateBin"
+					],
+					"query": [
+						{
+							"key": "bin",
+							"value": "124"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findByBinNumber",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/findByBinNumber?binNumber=123",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"findByBinNumber"
+					],
+					"query": [
+						{
+							"key": "binNumber",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBin",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/deleteBin?bin=1234567890123",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"deleteBin"
+					],
+					"query": [
+						{
+							"key": "bin",
+							"value": "1234567890123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBin",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nid\": \"9876543210132\",\r\n    \"phoneNumber\": \"+88098765432\",\r\n    \"areaOfService\": \"Chittagong\",\r\n    \"isActive\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/validate?binNumber=3466&nid=344",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"validate"
+					],
+					"query": [
+						{
+							"key": "bin",
+							"value": "123",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "binNumber",
+							"value": "3466"
+						},
+						{
+							"key": "nid",
+							"value": "344"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validate",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "admin"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/validate?binNumber=566&nid=345",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"validate"
+					],
+					"query": [
+						{
+							"key": "binNumber",
+							"value": "566"
+						},
+						{
+							"key": "nid",
+							"value": "345"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

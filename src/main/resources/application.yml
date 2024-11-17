@@ -1,0 +1,21 @@
+Server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3307/ivasapi
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  security:
+    user:
+      name: admin
+      password: admin123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+    show-sql: true
