@@ -5,16 +5,30 @@ import com.example.IvasAPI.exception.InvalidNIDException;
 import com.example.IvasAPI.exception.ResourceNotFoundException;
 import com.example.IvasAPI.model.IvasEntity;
 import com.example.IvasAPI.repository.IvasEntityRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
 public class IvasService {
 
     private final IvasEntityRepository ivasEntityRepository;
+
+    public List<IvasEntity> findAllEntities() {
+        return ivasEntityRepository.findAll();
+    }
+
+    public List<IvasEntity> findAllActiveEntities() {
+        return ivasEntityRepository.findAll()
+                .stream().filter(IvasEntity::isActive)
+                .collect(Collectors.toList());
+    }
 
     public IvasEntity findByBinNumber(String binNumber) {
         if (!isValidBinNumber(binNumber)) {
@@ -34,10 +48,12 @@ public class IvasService {
         return ivasEntityRepository.existsByBinNumberAndNid(binNumber, nid);
     }
 
+    @Transactional
     public IvasEntity createBin(IvasEntity ivasEntity) {
         return ivasEntityRepository.save(ivasEntity);
     }
 
+    @Transactional
     public ResponseEntity<String> updateBin(IvasEntity ivasEntity, Long id) {
         if (ivasEntityRepository.existsById(id)) {
             ivasEntity.setId(id);
@@ -48,6 +64,7 @@ public class IvasService {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Product with ID " + id + " not found");
     }
 
+    @Transactional
     public ResponseEntity<String> deleteBin(String bin) {
         return ivasEntityRepository.findByBinNumber(bin).map(ivasEntity -> {
             ivasEntityRepository.delete(ivasEntity);

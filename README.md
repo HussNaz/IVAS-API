@@ -8,4 +8,5 @@
 * BIN should be unique to the NID number.
 * BIN number will be Generated Automatically with always 13 digits.
 * There will be Invalid BIN and NID exceptions if BIN and NID is not valid.
+* Phone Number must be 11 digits starting with "+880".
 

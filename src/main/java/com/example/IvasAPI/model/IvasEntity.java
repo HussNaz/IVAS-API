@@ -1,5 +1,7 @@
 package com.example.IvasAPI.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
@@ -17,7 +19,13 @@ import java.util.Random;
 public class IvasEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(hidden = true)
     private Long id;
+
+//    @NotBlank(message = "Company name is required")
+//    @Size(min = 2, max = 50, message = "Company name must be between 2 and 50 characters")
+//    @Column(nullable = false)
+//    private String companyName;
 
     @Column(nullable = false, unique = true,updatable = false)
     private String binNumber;
@@ -36,6 +44,7 @@ public class IvasEntity {
     @Column(nullable = false)
     private String areaOfService;
 
+    @Schema(hidden = true)
     private boolean isActive = true;
 
     @PrePersist
