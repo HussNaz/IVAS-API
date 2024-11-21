@@ -15,7 +15,7 @@ public class SwaggerConfig {
 	@Bean
 	public OpenAPI customOpenAPI() {
 		return new OpenAPI()
-				.info(new Info().title("License API").version("1.0").description("This API is for License Service"))
+				.info(new Info().title("IVAS API").version("1.0").description("This API is for IVAS Service"))
 				.addSecurityItem(new SecurityRequirement().addList("JavaInUseSecurityScheme"))
 				.components(new Components().addSecuritySchemes("JavaInUseSecurityScheme", new SecurityScheme()
 						.name("JavaInUseSecurityScheme").type(SecurityScheme.Type.HTTP).scheme("basic")));
